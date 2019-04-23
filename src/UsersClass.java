@@ -37,7 +37,7 @@ public class UsersClass {
             System.out.println("Please enter your user name: ");
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
-            if (input == null) System.out.println("ERROR! Please provide a valid name: ");
+            if (input.equals("")) System.out.println("ERROR! Please provide a valid name: ");
             else {
                 userName = input;
                 break;
@@ -49,7 +49,7 @@ public class UsersClass {
             System.out.println("Please enter your password: ");
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
-            if (input == null) System.out.println("ERROR! a password is mandatory: ");
+            if (input.equals("")) System.out.println("ERROR! a password is mandatory: ");
             else {
                 password = input;
                 break;
@@ -61,7 +61,7 @@ public class UsersClass {
             System.out.println("Please enter your email: ");
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
-            if (input == null) System.out.println("ERROR! Please provide a valid email: ");
+            if (input.equals("")) System.out.println("ERROR! Please provide a valid email: ");
             else {
                 email = input;
                 break;
@@ -73,7 +73,7 @@ public class UsersClass {
             System.out.println("Please enter your first name: ");
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
-            if (input == null) System.out.println("ERROR! Please enter your first name: ");
+            if (input.equals("")) System.out.println("ERROR! Please enter your first name: ");
             else {
                 firstName = input;
                 break;
@@ -85,7 +85,7 @@ public class UsersClass {
             System.out.println("Please enter your middle name(Please enter NONE if there is none): ");
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
-            if (input == null) System.out.println("ERROR! This field is mandatory: ");
+            if (input.equals("")) System.out.println("ERROR! This field is mandatory: ");
             else {
                 middleName = input;
                 break;
@@ -97,7 +97,7 @@ public class UsersClass {
             System.out.println("Please enter your last name: ");
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
-            if (input == null) System.out.println("ERROR! Please provide a valid last name: ");
+            if (input.equals("")) System.out.println("ERROR! Please provide a valid last name: ");
             else {
                 lastName = input;
                 break;
@@ -109,7 +109,7 @@ public class UsersClass {
             System.out.println("Please enter your birthday(MM/DD/YYYY): ");
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
-            if (input == null || input.length() > 10 ||
+            if (input.equals("") || input.length() > 10 ||
                     input.charAt(2) != '/' || input.charAt(5) != '/') System.out.println("ERROR! Please provide a valid birthday: ");
             else {
                 birthday = input;

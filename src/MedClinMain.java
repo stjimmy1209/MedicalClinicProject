@@ -24,12 +24,19 @@ public class MedClinMain {
             if (input == 3) break;
             else if(input == 1){
 
-                UsersClass.register();
+                System.out.println("Please enter your pin for administrator: ");
+                Scanner scanner1 = new Scanner(System.in);
+                String pin = scanner1.nextLine();
+                LoginClass loginClass = new LoginClass();
+                if (pin.equals(loginClass.pinAdmin)) UsersClass.register();
+                else System.out.println("Sorry, only an admin can register new account.");
+
 
             }
-            else{
+            else if(input == 2){
 
-
+                LoginClass loginClass = new LoginClass();
+                loginClass.login();
 
             }
 

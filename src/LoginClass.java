@@ -11,7 +11,7 @@ public class LoginClass {
     String pinPatient = "patientcs425";
     String pinScheduler = "schedulercs425";
 
-    public void login(){
+    public String login(){
 
         while(true) {
 
@@ -66,6 +66,7 @@ public class LoginClass {
                                 System.out.println("Not a valid pincode.");
                             }
 
+                            return pinCode;
                         }
 
 
@@ -84,7 +85,7 @@ public class LoginClass {
             }
                 break;
         }
-
+        return null;
     }
 
 }

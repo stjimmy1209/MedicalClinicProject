@@ -36,7 +36,34 @@ public class MedClinMain {
             else if(input == 2){
 
                 LoginClass loginClass = new LoginClass();
-                loginClass.login();
+                String userPin = loginClass.login();
+                if (userPin.equals(loginClass.pinAdmin)){
+
+                    //admin menu
+                    System.out.println("Welcome. Please select your next move: ");
+                    System.out.println("1. Schedule an appointment");
+                    System.out.println("2. Create a new patient");
+                    System.out.println("3. Check the business report");
+
+
+                }else if(userPin.equals(loginClass.pinDocStaff)){
+
+                    //doc/staff menu
+                    System.out.println("Welcome doctor. Please select from the menu: ");
+                    System.out.println("1. Check patient records");
+                    System.out.println("2. Update patient records");
+                    System.out.println("3. Create an order");
+                    System.out.println("4. Check existing appointments");
+
+                } else if(userPin.equals(loginClass.pinPatient)){
+
+                    //patient menu
+
+                } else if(userPin.equals(loginClass.pinScheduler)){
+
+                    //scheduler menu
+
+                }
 
             }
 

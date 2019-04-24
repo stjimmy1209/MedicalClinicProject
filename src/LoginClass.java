@@ -1,7 +1,6 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class LoginClass {
@@ -22,10 +21,12 @@ public class LoginClass {
             else {
 
                 System.out.println("Please enter your password: ");
-                Scanner scannerpassword = new Scanner(System.in);
-                String password = scannerpassword.nextLine();
+                Scanner scannerPassword = new Scanner(System.in);
+                String password = scannerPassword.nextLine();
                 Connection c = null;
                 Statement stmt = null;
+                PreparedStatement stmt2 = null;
+                String timeLogin = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//login time stored
                 try {
                     Class.forName("org.postgresql.Driver");
                     c = DriverManager
@@ -63,12 +64,39 @@ public class LoginClass {
 
                                 //scheduler function here
                             } else {
-                                System.out.println("Not a valid pincode.");
+                                System.out.println("Not a valid pin code.");
                             }
+
+                            String timeLogout = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//logout time stored
+
+                            Class.forName("org.postgresql.Driver");
+                            c = DriverManager
+                                    .getConnection("jdbc:postgresql://localhost:5432/MedicalClinic",
+                                            "postgres", "123");
+                            c.setAutoCommit(false);
+                            stmt = c.createStatement();
+                            ResultSet resultSet2 = stmt.executeQuery("select user_name from users where user_id=" + userID +";");
+
+                            while(resultSet2.next()) {
+
+                            String nameUser = resultSet2.getString("user_name");
+                            String sessionID = nameUser + timeLogin;
+
+                            stmt2 = c.prepareStatement("insert into logins values (?,?,?,?,?)");
+                            stmt2.setString(1, sessionID);
+                            stmt2.setInt(2, userID);
+                            stmt2.setString(3, nameUser);
+                            stmt2.setString(4, timeLogin);
+                            stmt2.setString(5, timeLogout);
+                            stmt2.executeUpdate();
+                            c.commit();
+                            c.close();
+
+                            }
+
 
                             return pinCode;
                         }
-
 
                     }
 
@@ -87,5 +115,6 @@ public class LoginClass {
         }
         return null;
     }
+
 
 }

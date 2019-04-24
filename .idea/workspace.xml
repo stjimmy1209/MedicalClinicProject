@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e547c8f-5554-4a0d-b39e-2b07133b2bd8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ScheduleAppointments.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MedicalClinicProject/LoginClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MedicalClinicProject/LoginClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MedicalClinicProject/MedClinMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MedicalClinicProject/MedClinMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MedicalClinicProject/OrderClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MedicalClinicProject/OrderClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MedicalClinicProject/UsersClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MedicalClinicProject/UsersClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LoginClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MedClinMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MedClinMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OrderClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OrderClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UsersClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersClass.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MedClinMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+            <state relative-caret-position="153">
+              <caret line="38" column="52" lean-forward="true" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -45,8 +44,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UsersClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="-1794">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LoginClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="534">
+              <caret line="87" column="59" selection-start-line="87" selection-start-column="59" selection-end-line="87" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,20 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ScheduleAppointments.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="842">
-              <caret line="112" selection-start-line="112" selection-end-line="112" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LoginClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="19" />
+            <state relative-caret-position="291">
+              <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,9 +96,9 @@
         <option value="$PROJECT_DIR$/src/DBConnector.java" />
         <option value="$PROJECT_DIR$/src/OrderClass.java" />
         <option value="$PROJECT_DIR$/src/ScheduleAppointments.java" />
-        <option value="$PROJECT_DIR$/src/LoginClass.java" />
         <option value="$PROJECT_DIR$/src/UsersClass.java" />
         <option value="$PROJECT_DIR$/src/MedClinMain.java" />
+        <option value="$PROJECT_DIR$/src/LoginClass.java" />
       </list>
     </option>
   </component>
@@ -114,6 +113,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -135,13 +135,12 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556068828282" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556141509842" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -195,7 +194,8 @@
       <workItem from="1555959291719" duration="5118000" />
       <workItem from="1555984542107" duration="9055000" />
       <workItem from="1556043405105" duration="3016000" />
-      <workItem from="1556053467624" duration="8692000" />
+      <workItem from="1556053467624" duration="8826000" />
+      <workItem from="1556138549770" duration="2835000" />
     </task>
     <task id="LOCAL-00001" summary="user class updated">
       <created>1556045157658</created>
@@ -218,17 +218,24 @@
       <option name="project" value="LOCAL" />
       <updated>1556064075098</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="last update today">
+      <created>1556068928440</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556068928440</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25881000" />
+    <option name="totallyTimeSpent" value="28850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1014" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25878593" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26144835" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -265,7 +272,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="user class updated" />
     <MESSAGE value="LoginClass updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="LoginClass updated" />
+    <MESSAGE value="last update today" />
+    <option name="LAST_COMMIT_MESSAGE" value="last update today" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/TablesCreator.java" />
@@ -307,29 +315,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LoginClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ScheduleAppointments.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="842">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UsersClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="-1794">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -339,8 +327,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MedClinMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+        <state relative-caret-position="153">
+          <caret line="38" column="52" lean-forward="true" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ScheduleAppointments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LoginClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="87" column="59" selection-start-line="87" selection-start-column="59" selection-end-line="87" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

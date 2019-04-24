@@ -58,10 +58,17 @@ public class MedClinMain {
                 } else if(userPin.equals(loginClass.pinPatient)){
 
                     //patient menu
+                    System.out.println("Welcome. Please select from the menu: ");
+                    System.out.println("1. Check an order");
+                    System.out.println("2. View your bills");
 
                 } else if(userPin.equals(loginClass.pinScheduler)){
 
                     //scheduler menu
+                    System.out.println("Welcome. Please choose from the menu: ");
+                    System.out.println("1. View an order");
+                    System.out.println("2. View bill");
+                    System.out.println("3. Check existing appointments");
 
                 }
 

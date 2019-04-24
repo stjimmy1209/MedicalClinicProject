@@ -50,19 +50,19 @@ public class LoginClass {
                             if (pinCode.equals(pinAdmin)){
                                 System.out.println("You are an admin");
 
-                                // admin function here
+
                             }else if(pinCode.equals(pinDocStaff)){
                                 System.out.println("You are doc");
 
-                                //docstaff function here
+
                             }else if(pinCode.equals(pinPatient)){
                                 System.out.println("you are a patient");
 
-                                //patient function here
+
                             }else if(pinCode.equals(pinScheduler)){
                                 System.out.println("you are a scheduler");
 
-                                //scheduler function here
+
                             } else {
                                 System.out.println("Not a valid pin code.");
                             }

@@ -3,9 +3,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.Date;
 import java.util.Scanner;
-import java.text.SimpleDateFormat;
 
-public class ScheduleAppointments {
+public class UpdateFunctions {
 
 
 

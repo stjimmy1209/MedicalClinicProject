@@ -36,7 +36,7 @@ EmployeeFirst Name
 •	Staff ID
 •	Job type 
 o	1: Medical Staff
-o	2: Admin
+o	2: UpdateFunctions
 o	3 Scheduler
 Order
 All purchase transaction will be logged with the following information

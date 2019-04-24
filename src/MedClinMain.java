@@ -46,6 +46,9 @@ public class MedClinMain {
                     System.out.println("3. Check the business report");
 
 
+                    //admin functions here
+
+
                 }else if(userPin.equals(loginClass.pinDocStaff)){
 
                     //doc/staff menu
@@ -55,12 +58,16 @@ public class MedClinMain {
                     System.out.println("3. Create an order");
                     System.out.println("4. Check existing appointments");
 
+                    //doc/staff functions here
+
                 } else if(userPin.equals(loginClass.pinPatient)){
 
                     //patient menu
                     System.out.println("Welcome. Please select from the menu: ");
                     System.out.println("1. Check an order");
                     System.out.println("2. View your bills");
+
+                    //patient functions here
 
                 } else if(userPin.equals(loginClass.pinScheduler)){
 
@@ -69,6 +76,8 @@ public class MedClinMain {
                     System.out.println("1. View an order");
                     System.out.println("2. View bill");
                     System.out.println("3. Check existing appointments");
+
+                    //scheduler functions here
 
                 }
 

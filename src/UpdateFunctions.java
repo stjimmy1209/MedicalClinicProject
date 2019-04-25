@@ -205,6 +205,69 @@ public class UpdateFunctions {
 
     }
 
+    public static void createOrder(){
+
+        System.out.println("Please enter an order ID: (8 digit)");
+        Scanner scanner = new Scanner(System.in);
+        String orderID = scanner.nextLine();
+
+        System.out.println("Please enter the staff ID: ");
+        String staffID = scanner.nextLine();
+
+        System.out.println("Please enter the patient ID: ");
+        String patientID = scanner.nextLine();
+
+        System.out.println("Please choose a category type from the list below: ");
+        System.out.println("1. lab");
+        System.out.println("2. MRI");
+        System.out.println("3. Xray");
+        System.out.println("4. Office_Visit");
+
+        String cateType = scanner.nextLine();
+
+        if (cateType.equals("1")) cateType = "lab";
+        else if(cateType.equals("2")) cateType = "MRI";
+        else if (cateType.equals("3")) cateType = "Xray";
+        else if (cateType.equals("4")) cateType = "Office_Visit";
+
+        System.out.println("Please enter the cost amount for this order: ");
+        int cost = scanner.nextInt();
+
+        System.out.println("Please enter the date for this order (yyyy-MM-dd): ");
+        Scanner scanner2 = new Scanner(System.in);
+        String enterDate = scanner2.nextLine();
+        Date orderDate = java.sql.Date.valueOf(enterDate);
+
+        System.out.println("Please enter the diagnostic result for this order: ");
+        String result = scanner.nextLine();
+
+        Connection connection = DBConnector.connectToDB();
+        try {
+
+            PreparedStatement preparedStatement = connection.prepareStatement("insert into orders values (?,?,?,?::category_types,?,?,?)");
+            preparedStatement.setString(1, orderID);
+            preparedStatement.setString(2, staffID);
+            preparedStatement.setString(3, patientID);
+            preparedStatement.setString(4, cateType);
+            preparedStatement.setInt(5, cost);
+            preparedStatement.setDate(6, orderDate);
+            preparedStatement.setString(7, result);
+
+            preparedStatement.executeUpdate();
+            connection.commit();
+            connection.close();
+
+
+        } catch (Exception e){
+
+            e.printStackTrace();
+            System.err.println(e.getClass().getName()+": "+e.getMessage());
+            System.exit(0);
+
+        }
+
+    }
+
 
 
 

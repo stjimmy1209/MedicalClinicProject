@@ -1,3 +1,4 @@
+import javax.swing.text.View;
 import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -62,9 +63,13 @@ public class LoginClass {
                                 int selection = scannerAdmin.nextInt();
 
                                 if (selection == 1){
+
                                     UpdateFunctions.scheduleAppointment();
+
                                 } else if(selection == 2){
+
                                     UpdateFunctions.createPatient();
+
                                 } else if(selection == 3){
                                     //business report function here
                                 }
@@ -77,7 +82,7 @@ public class LoginClass {
                                 System.out.println("1. Check patient records");
                                 System.out.println("2. Update patient records");
                                 System.out.println("3. Create an order");
-                                System.out.println("4. Check existing appointments");
+                                System.out.println("4. Schedule appointments");
 
                                 Scanner scannerDoc = new Scanner(System.in);
                                 int input = scannerDoc.nextInt();
@@ -86,9 +91,9 @@ public class LoginClass {
                                 } else if(input == 2){
                                     UpdateFunctions.updatePatient();
                                 }else if(input == 3){
-
+                                    UpdateFunctions.createOrder();
                                 }else if(input == 4){
-
+                                    UpdateFunctions.scheduleAppointment();
                                 }
 
                             }else if(pinCode.equals(pinPatient)){
@@ -97,6 +102,23 @@ public class LoginClass {
                                 System.out.println("Welcome. Please select from the menu: ");
                                 System.out.println("1. Check an order");
                                 System.out.println("2. View your bills");
+                                System.out.println("3. Check your appintment: ");
+
+                                Scanner scannerDoc = new Scanner(System.in);
+                                int input = scannerDoc.nextInt();
+                                if (input == 1){
+
+                                    ViewFunctions.checkOrder(userID, pinPatient);
+
+                                } else if(input == 2){
+
+                                    ViewFunctions.checkBill(userID, pinPatient);
+
+                                } else if(input == 3){
+
+
+
+                                }
 
                             }else if(pinCode.equals(pinScheduler)){
                                 System.out.println("you are a scheduler");
@@ -106,9 +128,24 @@ public class LoginClass {
                                 System.out.println("Welcome. Please choose from the menu: ");
                                 System.out.println("1. View an order");
                                 System.out.println("2. View bill");
-                                System.out.println("3. Check existing appointments");
+                                System.out.println("3. Schedule appointments");
 
                                 //scheduler functions here
+                                Scanner scannerDoc = new Scanner(System.in);
+                                int input = scannerDoc.nextInt();
+                                if (input == 1){
+
+                                    ViewFunctions.checkOrder(userID, pinScheduler);
+
+                                } else if(input == 2){
+
+                                    ViewFunctions.checkBill(userID, pinScheduler);
+
+                                } else if(input == 3){
+
+                                    UpdateFunctions.scheduleAppointment();
+
+                                }
 
                             } else {
                                 System.out.println("Not a valid pin code.");

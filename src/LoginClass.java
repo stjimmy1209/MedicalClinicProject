@@ -50,18 +50,65 @@ public class LoginClass {
                             if (pinCode.equals(pinAdmin)){
                                 System.out.println("You are an admin");
 
+                                UpdateFunctions.createStaff(userID, pinAdmin);
+
+                                System.out.println("Welcome. Please select your next move: ");
+                                System.out.println("1. Schedule an appointment");
+                                System.out.println("2. Create a new patient");
+                                System.out.println("3. Check the business report");
+
+                                //admin functions here
+                                Scanner scannerAdmin = new Scanner(System.in);
+                                int selection = scannerAdmin.nextInt();
+
+                                if (selection == 1){
+                                    UpdateFunctions.scheduleAppointment();
+                                } else if(selection == 2){
+                                    UpdateFunctions.createPatient();
+                                } else if(selection == 3){
+                                    //business report function here
+                                }
 
                             }else if(pinCode.equals(pinDocStaff)){
-                                System.out.println("You are doc");
+                                System.out.println("You are doc/staff");
+                                UpdateFunctions.createStaff(userID, pinDocStaff);
+                                //doc/staff menu
+                                System.out.println("Welcome doctor. Please select from the menu: ");
+                                System.out.println("1. Check patient records");
+                                System.out.println("2. Update patient records");
+                                System.out.println("3. Create an order");
+                                System.out.println("4. Check existing appointments");
 
+                                Scanner scannerDoc = new Scanner(System.in);
+                                int input = scannerDoc.nextInt();
+                                if (input == 1){
+                                    ViewFunctions.viewPatient();
+                                } else if(input == 2){
+                                    UpdateFunctions.updatePatient();
+                                }else if(input == 3){
+
+                                }else if(input == 4){
+
+                                }
 
                             }else if(pinCode.equals(pinPatient)){
                                 System.out.println("you are a patient");
-
+                                //patient menu
+                                System.out.println("Welcome. Please select from the menu: ");
+                                System.out.println("1. Check an order");
+                                System.out.println("2. View your bills");
 
                             }else if(pinCode.equals(pinScheduler)){
                                 System.out.println("you are a scheduler");
 
+                                UpdateFunctions.createStaff(userID, pinScheduler);
+                                //scheduler menu
+                                System.out.println("Welcome. Please choose from the menu: ");
+                                System.out.println("1. View an order");
+                                System.out.println("2. View bill");
+                                System.out.println("3. Check existing appointments");
+
+                                //scheduler functions here
 
                             } else {
                                 System.out.println("Not a valid pin code.");

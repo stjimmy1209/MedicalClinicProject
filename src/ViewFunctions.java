@@ -212,6 +212,40 @@ public class ViewFunctions {
 
     }
 
+    public static void checkApmt(int userID){
+
+        Connection connection = DBConnector.connectToDB();
+
+        try {
+            Statement statement = connection.createStatement();
+            String sql = "select * from appointments natural join users where user_id=" + userID + ";";
+            ResultSet resultSet = statement.executeQuery(sql);
+            while (resultSet.next()) {
+
+                String apmtID = resultSet.getString("appointment_id");
+                String ptntID = resultSet.getString("patient_id");
+                String stfID = resultSet.getString("staff_id");
+                Date apmtDate = resultSet.getDate("appointment_date");
+
+                System.out.println("You have the following appointment info: ");
+                System.out.println("Appointment ID: " + apmtID);
+                System.out.println("Patient ID: " + ptntID);
+                System.out.println("Staff ID: " + stfID);
+                System.out.println("Appointment Date: " + apmtDate);
+
+            }
+
+            statement.close();
+            resultSet.close();
+            connection.close();
+        } catch(Exception e){
+            e.printStackTrace();
+            System.err.println(e.getClass().getName()+": "+e.getMessage());
+            System.exit(0);
+        }
+
+    }
+
 
 
 

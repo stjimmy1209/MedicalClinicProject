@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="2e547c8f-5554-4a0d-b39e-2b07133b2bd8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MedicalClinicProject/LoginClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MedicalClinicProject/LoginClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MedicalClinicProject/META-INF/MedicalClinicProject.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BusinessReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusinessReport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LoginClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MedClinMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MedClinMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UpdateFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UpdateFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UsersClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ViewFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ViewFunctions.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,22 +33,17 @@
     <expand />
     <select />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MedClinMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UsersClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2397">
-              <caret line="145" column="31" selection-start-line="143" selection-start-column="12" selection-end-line="145" selection-end-column="31" />
+            <state relative-caret-position="461">
+              <caret line="119" column="29" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,10 +52,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UsersClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="149" column="68" lean-forward="true" selection-start-line="149" selection-start-column="12" selection-end-line="149" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UpdateFunctions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="939">
-              <caret line="255" selection-start-line="255" selection-end-line="255" />
+            <state relative-caret-position="363">
+              <caret line="147" column="78" lean-forward="true" selection-start-line="147" selection-start-column="78" selection-end-line="147" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ViewFunctions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1232">
-              <caret line="243" column="27" lean-forward="true" selection-start-line="241" selection-start-column="12" selection-end-line="243" selection-end-column="27" />
+            <state relative-caret-position="488">
+              <caret line="238" column="28" selection-start-line="238" selection-start-column="28" selection-end-line="238" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DBConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" column="27" selection-start-line="16" selection-start-column="12" selection-end-line="18" selection-end-column="27" />
+            <state relative-caret-position="204">
+              <caret line="12" column="74" lean-forward="true" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BusinessReport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="40" column="58" lean-forward="true" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+            <state relative-caret-position="545">
+              <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LoginClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="112" column="70" selection-start-line="112" selection-start-column="70" selection-end-line="112" selection-end-column="70" />
+            <state relative-caret-position="1688">
+              <caret line="199" column="35" lean-forward="true" selection-start-line="199" selection-start-column="35" selection-end-line="199" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,20 +140,20 @@
       <list>
         <option value="$PROJECT_DIR$/src/TablesCreator.java" />
         <option value="$PROJECT_DIR$/src/OrderClass.java" />
-        <option value="$PROJECT_DIR$/src/UsersClass.java" />
         <option value="$PROJECT_DIR$/src/ScheduleAppointments.java" />
         <option value="$PROJECT_DIR$/src/Admin.java" />
         <option value="$PROJECT_DIR$/src/UpdatingFunctions.java" />
         <option value="$PROJECT_DIR$/src/DBConnector.java" />
         <option value="$PROJECT_DIR$/src/MedClinMain.java" />
+        <option value="$PROJECT_DIR$/src/UsersClass.java" />
         <option value="$PROJECT_DIR$/src/UpdateFunctions.java" />
         <option value="$PROJECT_DIR$/src/ViewFunctions.java" />
-        <option value="$PROJECT_DIR$/src/LoginClass.java" />
         <option value="$PROJECT_DIR$/src/BusinessReport.java" />
+        <option value="$PROJECT_DIR$/src/LoginClass.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1014" />
@@ -152,8 +164,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,6 +184,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,7 +253,9 @@
       <workItem from="1556138549770" duration="13414000" />
       <workItem from="1556216937117" duration="8064000" />
       <workItem from="1556238408556" duration="84000" />
-      <workItem from="1556238591757" duration="2330000" />
+      <workItem from="1556238591757" duration="2734000" />
+      <workItem from="1556474334826" duration="1236000" />
+      <workItem from="1556649625940" duration="10766000" />
     </task>
     <task id="LOCAL-00001" summary="user class updated">
       <created>1556045157658</created>
@@ -299,17 +313,23 @@
       <option name="project" value="LOCAL" />
       <updated>1556225857241</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="project finished">
+      <created>1556241352754</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1556241352754</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49907000" />
+    <option name="totallyTimeSpent" value="62313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1014" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26943558" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16719915" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -318,7 +338,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.8383948" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21258135" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -351,7 +371,8 @@
     <MESSAGE value="class structure changed" />
     <MESSAGE value="last update 04/24/2019" />
     <MESSAGE value="checkAppointments and business reports to be done" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkAppointments and business reports to be done" />
+    <MESSAGE value="project finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="project finished" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/TablesCreator.java" />
@@ -365,47 +386,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/OrderClass.java" />
     <entry file="file://$PROJECT_DIR$/src/StaffClass.java" />
-    <entry file="file://$PROJECT_DIR$/src/MedClinMain.java">
+    <entry file="file://$PROJECT_DIR$/src/DBConnector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <caret line="12" column="74" lean-forward="true" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/postgresql-42.2.5.jar!/org/postgresql/core/v3/QueryExecutorImpl.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MedClinMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="119" column="29" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UsersClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2397">
-          <caret line="145" column="31" selection-start-line="143" selection-start-column="12" selection-end-line="145" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DBConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="27" selection-start-line="16" selection-start-column="12" selection-end-line="18" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UpdateFunctions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="939">
-          <caret line="255" selection-start-line="255" selection-end-line="255" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LoginClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="112" column="70" selection-start-line="112" selection-start-column="70" selection-end-line="112" selection-end-column="70" />
+        <state relative-caret-position="390">
+          <caret line="149" column="68" lean-forward="true" selection-start-line="149" selection-start-column="12" selection-end-line="149" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -414,8 +421,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ViewFunctions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="243" column="27" lean-forward="true" selection-start-line="241" selection-start-column="12" selection-end-line="243" selection-end-column="27" />
+        <state relative-caret-position="488">
+          <caret line="238" column="28" selection-start-line="238" selection-start-column="28" selection-end-line="238" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -424,8 +431,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BusinessReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="40" column="58" lean-forward="true" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+        <state relative-caret-position="545">
+          <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LoginClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1688">
+          <caret line="199" column="35" lean-forward="true" selection-start-line="199" selection-start-column="35" selection-end-line="199" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UpdateFunctions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="147" column="78" lean-forward="true" selection-start-line="147" selection-start-column="78" selection-end-line="147" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -23,9 +23,8 @@ public class BusinessReport {
 
         } catch (Exception e){
 
-            e.printStackTrace();
-            System.err.println(e.getClass().getName()+": "+e.getMessage());
-            System.exit(0);
+            System.out.println("ERROR in input! Please try again.");
+            totalRvnDoc();
 
         }
 
@@ -53,9 +52,8 @@ public class BusinessReport {
 
         } catch (Exception e){
 
-            e.printStackTrace();
-            System.err.println(e.getClass().getName()+": "+e.getMessage());
-            System.exit(0);
+            System.out.println("ERROR in input! Please try again.");
+            totalRvnDoc();
 
         }
 

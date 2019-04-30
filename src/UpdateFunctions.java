@@ -90,8 +90,8 @@ public class UpdateFunctions {
 
         } catch (Exception e){
 
-            System.err.println( e.getClass().getName()+": "+ e.getMessage() );
-            System.exit(0);
+            System.out.println("ERROR in input! Please try again.");
+            scheduleAppointment();
 
         }
         System.out.println("Your info has been updated.");
@@ -130,10 +130,10 @@ public class UpdateFunctions {
         statement.executeUpdate();
         connection.commit();
         connection.close();
+
         } catch(Exception e) {
-            e.printStackTrace();
-            System.err.println(e.getClass().getName()+": "+e.getMessage());
-            System.exit(0);
+            System.out.println("ERROR in input! Please try again.");
+            createPatient();
         }
 
         System.out.println("The new patient has been created successfully.");
@@ -157,9 +157,10 @@ public class UpdateFunctions {
         connection.commit();
         connection.close();
         } catch(Exception e){
-            e.printStackTrace();
-            System.err.println(e.getClass().getName()+": "+e.getMessage());
-            System.exit(0);
+
+            System.out.println("ERROR in input! Please try again.");
+            updatePatient();
+
         }
 
     }
@@ -196,9 +197,8 @@ public class UpdateFunctions {
             }
         } catch (Exception e){
 
-            e.printStackTrace();
-            System.err.println(e.getClass().getName()+": "+e.getMessage());
-            System.exit(0);
+            System.out.println("ERROR in input! Please try again.");
+            createStaff(userID, privilegeType);
 
         }
 
@@ -260,9 +260,8 @@ public class UpdateFunctions {
 
         } catch (Exception e){
 
-            e.printStackTrace();
-            System.err.println(e.getClass().getName()+": "+e.getMessage());
-            System.exit(0);
+            System.out.println("ERROR in input! Please try again.");
+            createOrder();
 
         }
 

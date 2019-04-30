@@ -41,9 +41,8 @@ public class ViewFunctions {
             connection.close();
         } catch (Exception e){
 
-            e.printStackTrace();
-            System.err.println(e.getClass().getName()+": "+e.getMessage());
-            System.exit(0);
+            System.out.println("ERROR in input! Please try again.");
+            viewPatient();
 
         }
 
@@ -89,9 +88,7 @@ public class ViewFunctions {
 
             } catch (Exception e){
 
-                e.printStackTrace();
-                System.err.println(e.getClass().getName()+": "+e.getMessage());
-                System.exit(0);
+                checkOrder(userID, pinCode);
 
             }
 
@@ -137,9 +134,8 @@ public class ViewFunctions {
 
             } catch (Exception e){
 
-                e.printStackTrace();
-                System.err.println(e.getClass().getName()+": "+e.getMessage());
-                System.exit(0);
+                System.out.println("ERROR in input! Please try again.");
+                checkOrder(userID, pinCode);
 
             }
 
@@ -204,9 +200,8 @@ public class ViewFunctions {
             }
         } catch (Exception e){
 
-            e.printStackTrace();
-            System.err.println(e.getClass().getName()+": "+e.getMessage());
-            System.exit(0);
+            System.out.println("ERROR in input! Please try again.");
+            checkBill(userID, pinCode);
 
         }
 
@@ -239,9 +234,10 @@ public class ViewFunctions {
             resultSet.close();
             connection.close();
         } catch(Exception e){
-            e.printStackTrace();
-            System.err.println(e.getClass().getName()+": "+e.getMessage());
-            System.exit(0);
+
+            System.out.println("ERROR in input! Please try again.");
+            checkApmt(userID);
+
         }
 
     }

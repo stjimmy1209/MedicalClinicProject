@@ -147,8 +147,8 @@ public class UsersClass {
 
         } catch (Exception e){
 
-            System.err.println( e.getClass().getName()+": "+ e.getMessage() );
-            System.exit(0);
+            System.out.println("ERROR in input! Please try again.");
+            register();
 
         }
         System.out.println("Your info has been updated.");

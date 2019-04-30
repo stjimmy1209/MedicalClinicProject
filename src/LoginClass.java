@@ -171,39 +171,38 @@ public class LoginClass {
 
                             while(resultSet2.next()) {
 
-                            String nameUser = resultSet2.getString("user_name");
-                            String sessionID = nameUser + timeLogin;
+                                String nameUser = resultSet2.getString("user_name");
+                                String sessionID = nameUser + timeLogin;
 
-                            stmt2 = c.prepareStatement("insert into logins values (?,?,?,?,?)");
-                            stmt2.setString(1, sessionID);
-                            stmt2.setInt(2, userID);
-                            stmt2.setString(3, nameUser);
-                            stmt2.setString(4, timeLogin);
-                            stmt2.setString(5, timeLogout);
-                            stmt2.executeUpdate();
-                            c.commit();
-                            c.close();
+                                stmt2 = c.prepareStatement("insert into logins values (?,?,?,?,?)");
+                                stmt2.setString(1, sessionID);
+                                stmt2.setInt(2, userID);
+                                stmt2.setString(3, nameUser);
+                                stmt2.setString(4, timeLogin);
+                                stmt2.setString(5, timeLogout);
+                                stmt2.executeUpdate();
+                                c.commit();
+                                c.close();
 
                             }
-
 
                             return pinCode;
                         }
 
                     }
-
                     resultSet.close();
                     stmt.close();
                     c.close();
 
                 }catch ( Exception e ) {
-                    System.err.println( e.getClass().getName()+": "+ e.getMessage() );
+                    e.printStackTrace();
+                    System.err.println(e.getClass().getName()+": "+e.getMessage());
                     System.exit(0);
                 }
 
 
             }
-                break;
+            break;
         }
         return null;
     }
